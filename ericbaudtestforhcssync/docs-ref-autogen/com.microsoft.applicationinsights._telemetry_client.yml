@@ -1,0 +1,1005 @@
+### YamlMime:ManagedReference
+items:
+  - uid: com.microsoft.applicationinsights._telemetry_client
+    id: _telemetry_client
+    parent: com.microsoft.applicationinsights
+    children:
+      - com.microsoft.applicationinsights._telemetry_client.flush()
+      - com.microsoft.applicationinsights._telemetry_client.getContext()
+      - com.microsoft.applicationinsights._telemetry_client.isDisabled()
+      - com.microsoft.applicationinsights._telemetry_client.TelemetryClient()
+      - com.microsoft.applicationinsights._telemetry_client.TelemetryClient(TelemetryConfiguration)
+      - com.microsoft.applicationinsights._telemetry_client.track(Telemetry)
+      - com.microsoft.applicationinsights._telemetry_client.trackDependency(RemoteDependencyTelemetry)
+      - 'com.microsoft.applicationinsights._telemetry_client.trackDependency(String,String,Duration,boolean)'
+      - com.microsoft.applicationinsights._telemetry_client.trackEvent(EventTelemetry)
+      - com.microsoft.applicationinsights._telemetry_client.trackEvent(String)
+      - 'com.microsoft.applicationinsights._telemetry_client.trackEvent(String,Map<String, String>,Map<String, Double>)'
+      - com.microsoft.applicationinsights._telemetry_client.trackException(Exception)
+      - 'com.microsoft.applicationinsights._telemetry_client.trackException(Exception,Map<String, String>,Map<String, Double>)'
+      - com.microsoft.applicationinsights._telemetry_client.trackException(ExceptionTelemetry)
+      - 'com.microsoft.applicationinsights._telemetry_client.trackHttpRequest(String,Date,long,String,boolean)'
+      - com.microsoft.applicationinsights._telemetry_client.trackMetric(MetricTelemetry)
+      - 'com.microsoft.applicationinsights._telemetry_client.trackMetric(String,double)'
+      - 'com.microsoft.applicationinsights._telemetry_client.trackMetric(String,double,int,double,double,Map<String, String>)'
+      - com.microsoft.applicationinsights._telemetry_client.trackPageView(PageViewTelemetry)
+      - com.microsoft.applicationinsights._telemetry_client.trackPageView(String)
+      - com.microsoft.applicationinsights._telemetry_client.trackRequest(RequestTelemetry)
+      - com.microsoft.applicationinsights._telemetry_client.trackSessionState(SessionState)
+      - com.microsoft.applicationinsights._telemetry_client.trackTrace(String)
+      - 'com.microsoft.applicationinsights._telemetry_client.trackTrace(String,SeverityLevel)'
+      - 'com.microsoft.applicationinsights._telemetry_client.trackTrace(String,SeverityLevel,Map<String, String>)'
+      - com.microsoft.applicationinsights._telemetry_client.trackTrace(TraceTelemetry)
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: TelemetryClient
+    nameWithType: TelemetryClient
+    fullName: com.microsoft.applicationinsights.TelemetryClient
+    type: Class
+    source:
+      remote: &ref_0
+        path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+        branch: master
+        repo: 'https://github.com/Microsoft/ApplicationInsights-Java'
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 46
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-101">Erstellen Sie eine Instanz dieser Klasse werden an Azure Anwendung Einsichten zu senden.</span><span class="sxs-lookup"><span data-stu-id="b628c-101">Create an instance of this class to send telemetry to Azure Application Insights.</span></span> <span data-ttu-id="b628c-102">Allgemeine Übersicht<ulink url="https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics">https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics</ulink></span><span class="sxs-lookup"><span data-stu-id="b628c-102">General overview <ulink url="https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics">https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics</ulink></span></span></p>'
+    syntax: &ref_1
+      content: public class TelemetryClient
+    inheritance:
+      - java.lang.Object
+  - uid: com.microsoft.applicationinsights._telemetry_client.flush()
+    id: flush()
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: flush()
+    nameWithType: TelemetryClient.flush()
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.flush()
+    overload: com.microsoft.applicationinsights._telemetry_client.flush*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 460
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-103">Leert möglich ausstehend Telemetries im Kanal an.</span><span class="sxs-lookup"><span data-stu-id="b628c-103">Flushes possible pending Telemetries in the channel.</span></span> <span data-ttu-id="b628c-104">Für eine kontinuierlich Ausführung Server-Anwendung nicht erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="b628c-104">Not required for a continuously-running server application.</span></span> </p>
+    syntax:
+      content: public void flush()
+  - uid: com.microsoft.applicationinsights._telemetry_client.getContext()
+    id: getContext()
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: getContext()
+    nameWithType: TelemetryClient.getContext()
+    fullName: TelemetryContext com.microsoft.applicationinsights.TelemetryClient.getContext()
+    overload: com.microsoft.applicationinsights._telemetry_client.getContext*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 88
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-105">Ruft im aktuellen Kontext, mit dem telemetrieprotokoll ergänzen, die Sie senden.</span><span class="sxs-lookup"><span data-stu-id="b628c-105">Gets the current context that is used to augment telemetry you send.</span></span> </p>'
+    syntax:
+      content: public TelemetryContext getContext()
+      return:
+        type: com.microsoft.applicationinsights.telemetry._telemetry_context
+        description: <p><span data-ttu-id="b628c-106">Ein telemetrieprotokoll-Kontext für alle Datensätze verwendet.</span><span class="sxs-lookup"><span data-stu-id="b628c-106">A telemetry context used for all records.</span></span> <span data-ttu-id="b628c-107">Diese Änderungen wirkt sich alle zukünftigen werden in dieser Sitzung Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-107">Changes to it will impact all future telemetry in this application session.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.isDisabled()
+    id: isDisabled()
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: isDisabled()
+    nameWithType: TelemetryClient.isDisabled()
+    fullName: boolean com.microsoft.applicationinsights.TelemetryClient.isDisabled()
+    overload: com.microsoft.applicationinsights._telemetry_client.isDisabled*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 105
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-108">Überprüft, ob Protokollierung aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="b628c-108">Checks whether tracking is enabled.</span></span> </p>'
+    syntax:
+      content: public boolean isDisabled()
+      return:
+        type: 4fc6e284
+        description: '<p><span data-ttu-id="b628c-109">"true", wenn Verlauf deaktiviert ist, ist "false" andernfalls.</span><span class="sxs-lookup"><span data-stu-id="b628c-109">''true'' if tracking is disabled, ''false'' otherwise.</span></span> </p>'
+  - uid: com.microsoft.applicationinsights._telemetry_client.TelemetryClient()
+    id: TelemetryClient()
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: TelemetryClient()
+    nameWithType: TelemetryClient.TelemetryClient()
+    fullName: com.microsoft.applicationinsights.TelemetryClient.TelemetryClient()
+    overload: com.microsoft.applicationinsights._telemetry_client.TelemetryClient*
+    type: Constructor
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 79
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-110">Initialisiert eine neue Instanz der <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">TelemetryClient</xref> -Klasse, aus der aktiven Konfiguration konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="b628c-110">Initializes a new instance of the <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">TelemetryClient</xref> class, configured from the active configuration.</span></span> </p>'
+    syntax:
+      content: public TelemetryClient()
+  - uid: com.microsoft.applicationinsights._telemetry_client.TelemetryClient(TelemetryConfiguration)
+    id: TelemetryClient(TelemetryConfiguration)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: TelemetryClient(TelemetryConfiguration configuration)
+    nameWithType: TelemetryClient.TelemetryClient(TelemetryConfiguration configuration)
+    fullName: com.microsoft.applicationinsights.TelemetryClient.TelemetryClient(TelemetryConfiguration configuration)
+    overload: com.microsoft.applicationinsights._telemetry_client.TelemetryClient*
+    type: Constructor
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 64
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-111">Initialisiert eine neue Instanz der Klasse <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">TelemetryClient</xref> .</span><span class="sxs-lookup"><span data-stu-id="b628c-111">Initializes a new instance of the <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">TelemetryClient</xref> class.</span></span> <span data-ttu-id="b628c-112">Senden Sie werden mit der angegebenen Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="b628c-112">Send telemetry with the specified configuration.</span></span> </p>
+    syntax:
+      content: public TelemetryClient(TelemetryConfiguration configuration)
+      parameters:
+        - id: configuration
+          type: com.microsoft.applicationinsights._telemetry_configuration
+          description: <p><span data-ttu-id="b628c-113">Die Konfiguration funktionieren diese Instanz mit.</span><span class="sxs-lookup"><span data-stu-id="b628c-113">The configuration this instance will work with.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.track(Telemetry)
+    id: track(Telemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: track(Telemetry telemetry)
+    nameWithType: TelemetryClient.track(Telemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.track(Telemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.track*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 386
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-114">Diese Methode ist Teil der Anwendung Einsichten Infrastruktur.</span><span class="sxs-lookup"><span data-stu-id="b628c-114">This method is part of the Application Insights infrastructure.</span></span> <span data-ttu-id="b628c-115">Rufen Sie es direkt.</span><span class="sxs-lookup"><span data-stu-id="b628c-115">Do not call it directly.</span></span> </p>
+    syntax:
+      content: public void track(Telemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._telemetry
+          description: <p><span data-ttu-id="b628c-116">Die <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.Telemetry</xref> -Instanz aus.</span><span class="sxs-lookup"><span data-stu-id="b628c-116">The <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.Telemetry</xref> instance.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackDependency(RemoteDependencyTelemetry)
+    id: trackDependency(RemoteDependencyTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackDependency(RemoteDependencyTelemetry telemetry)
+    nameWithType: TelemetryClient.trackDependency(RemoteDependencyTelemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackDependency(RemoteDependencyTelemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackDependency*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 343
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-117">Sendet einen Dependency Datensatz zu Anwendung Einsichten an.</span><span class="sxs-lookup"><span data-stu-id="b628c-117">Sends a dependency record to Application Insights.</span></span> <span data-ttu-id="b628c-118">"Abhängigkeiten" Suchen und Analytics wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-118">Appears in "dependencies" in Search and Analytics.</span></span> <span data-ttu-id="b628c-119">Legen Sie Gerätetyp == "PC", um den Eintrag zu metrischen Diagramme, wie z. B. Server Abhängigkeit Anrufe, Abhängigkeit Reaktionszeiten und Abhängigkeit Fehlern beitragen.</span><span class="sxs-lookup"><span data-stu-id="b628c-119">Set device type == "PC" to have the record contribute to metric charts such as Server Dependency Calls, Dependency Response Time, and Dependency Failures.</span></span> </p>'
+    syntax:
+      content: public void trackDependency(RemoteDependencyTelemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._remote_dependency_telemetry
+          description: <p><span data-ttu-id="b628c-120">werden</span><span class="sxs-lookup"><span data-stu-id="b628c-120">telemetry</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackDependency(String,String,Duration,boolean)'
+    id: 'trackDependency(String,String,Duration,boolean)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackDependency(String dependencyName, String commandName, Duration duration, boolean success)'
+    nameWithType: 'TelemetryClient.trackDependency(String dependencyName, String commandName, Duration duration, boolean success)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackDependency(String dependencyName, String commandName, Duration duration, boolean success)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackDependency*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 331
+    package: com.microsoft.applicationinsights
+    syntax:
+      content: 'public void trackDependency(String dependencyName, String commandName, Duration duration, boolean success)'
+      parameters:
+        - id: dependencyName
+          type: '26831127'
+        - id: commandName
+          type: '26831127'
+        - id: duration
+          type: com.microsoft.applicationinsights.telemetry._duration
+        - id: success
+          type: 4fc6e284
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackEvent(EventTelemetry)
+    id: trackEvent(EventTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackEvent(EventTelemetry telemetry)
+    nameWithType: TelemetryClient.trackEvent(EventTelemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackEvent(EventTelemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackEvent*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 161
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-121">Sendet einen Eintrag benutzerdefiniertes Ereignis zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-121">Sends a custom event record to Application Insights.</span></span> <span data-ttu-id="b628c-122">"Benutzerdefinierte Ereignisse" in Analytics, Suche und Kennzahlen Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-122">Appears in "custom events" in Analytics, Search and Metrics Explorer.</span></span> </p>'
+    syntax:
+      content: public void trackEvent(EventTelemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._event_telemetry
+          description: <p><span data-ttu-id="b628c-123">Hiermit werden Ereignis.</span><span class="sxs-lookup"><span data-stu-id="b628c-123">An event telemetry item.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackEvent(String)
+    id: trackEvent(String)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackEvent(String name)
+    nameWithType: TelemetryClient.trackEvent(String name)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackEvent(String name)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackEvent*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 153
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-124">Sendet einen Eintrag benutzerdefiniertes Ereignis zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-124">Sends a custom event record to Application Insights.</span></span> <span data-ttu-id="b628c-125">"Benutzerdefinierte Ereignisse" in Analytics, Suche und Kennzahlen Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-125">Appears in "custom events" in Analytics, Search and Metrics Explorer.</span></span> </p>'
+    syntax: &ref_2
+      content: public void trackEvent(String name)
+      parameters:
+        - id: name
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-126">Einen Namen für das Ereignis.</span><span class="sxs-lookup"><span data-stu-id="b628c-126">A name for the event.</span></span> <span data-ttu-id="b628c-127">Die Maximallänge 150.</span><span class="sxs-lookup"><span data-stu-id="b628c-127">Max length 150.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackEvent(String,Map<String, String>,Map<String, Double>)'
+    id: 'trackEvent(String,Map<String, String>,Map<String, Double>)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackEvent(String name, Map<String, String> properties, Map<String, Double> metrics)'
+    nameWithType: 'TelemetryClient.trackEvent(String name, Map<String, String> properties, Map<String, Double> metrics)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackEvent(String name, Map<String, String> properties, Map<String, Double> metrics)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackEvent*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 127
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-128">Sendet einen Eintrag benutzerdefiniertes Ereignis zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-128">Sends a custom event record to Application Insights.</span></span> <span data-ttu-id="b628c-129">Benutzerdefinierte Ereignisse in Analytics, Suche und Kennzahlen Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-129">Appears in custom events in Analytics, Search and Metrics Explorer.</span></span> </p>'
+    syntax:
+      content: 'public void trackEvent(String name, Map<String, String> properties, Map<String, Double> metrics)'
+      parameters:
+        - id: name
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-130">Einen Namen für das Ereignis.</span><span class="sxs-lookup"><span data-stu-id="b628c-130">A name for the event.</span></span> <span data-ttu-id="b628c-131">Die Maximallänge 150.</span><span class="sxs-lookup"><span data-stu-id="b628c-131">Max length 150.</span></span> </p>
+        - id: properties
+          type: 689c8cb5
+          description: <p><span data-ttu-id="b628c-132">Mit dem Namen Zeichenfolgenwerte Sie suchen können und Filtern von Ereignissen.</span><span class="sxs-lookup"><span data-stu-id="b628c-132">Named string values you can use to search and filter events.</span></span> </p>
+        - id: metrics
+          type: 2ed405bc
+          description: <p><span data-ttu-id="b628c-133">Numerische Maße für das Ereignis zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="b628c-133">Numeric measurements associated with this event.</span></span> <span data-ttu-id="b628c-134">Klicken Sie unter benutzerdefinierte Kriterien in Kennzahlen Explorer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-134">Appear under Custom Metrics in Metrics Explorer.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackException(Exception)
+    id: trackException(Exception)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackException(Exception exception)
+    nameWithType: TelemetryClient.trackException(Exception exception)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackException(Exception exception)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackException*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 291
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-135">Sendet einen Ausnahmedatensatz zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-135">Sends an exception record to Application Insights.</span></span> <span data-ttu-id="b628c-136">"Ausnahmen" Analytics und eine Suche wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-136">Appears in "exceptions" in Analytics and Search.</span></span> </p>
+    syntax:
+      content: public void trackException(Exception exception)
+      parameters:
+        - id: exception
+          type: 8a99d4b0
+          description: <p><span data-ttu-id="b628c-137">Diese Ausnahme Informationen zu protokollieren.</span><span class="sxs-lookup"><span data-stu-id="b628c-137">The exception to log information about.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackException(Exception,Map<String, String>,Map<String, Double>)'
+    id: 'trackException(Exception,Map<String, String>,Map<String, Double>)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackException(Exception exception, Map<String, String> properties, Map<String, Double> metrics)'
+    nameWithType: 'TelemetryClient.trackException(Exception exception, Map<String, String> properties, Map<String, Double> metrics)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackException(Exception exception, Map<String, String> properties, Map<String, Double> metrics)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackException*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 269
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-138">Sendet einen Ausnahmedatensatz zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-138">Sends an exception record to Application Insights.</span></span> <span data-ttu-id="b628c-139">"Ausnahmen" Analytics und eine Suche wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-139">Appears in "exceptions" in Analytics and Search.</span></span> </p>
+    syntax:
+      content: 'public void trackException(Exception exception, Map<String, String> properties, Map<String, Double> metrics)'
+      parameters:
+        - id: exception
+          type: 8a99d4b0
+          description: <p><span data-ttu-id="b628c-140">Diese Ausnahme Informationen zu protokollieren.</span><span class="sxs-lookup"><span data-stu-id="b628c-140">The exception to log information about.</span></span> </p>
+        - id: properties
+          type: 689c8cb5
+          description: '<p><span data-ttu-id="b628c-141">Mit dem Namen Zeichenfolgenwerte, die Sie verwenden können, zu durchsuchen und Spur Nachrichten klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="b628c-141">Named string values you can use to search and classify trace messages.</span></span> </p>'
+        - id: metrics
+          type: 2ed405bc
+          description: <p><span data-ttu-id="b628c-142">Maße für das Ausnahmeereignis zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="b628c-142">Measurements associated with this exception event.</span></span> <span data-ttu-id="b628c-143">In "benutzerdefinierte Kennzahlen" Kennzahlen Explorer angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-143">Appear in "custom metrics" in Metrics Explorer.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackException(ExceptionTelemetry)
+    id: trackException(ExceptionTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackException(ExceptionTelemetry telemetry)
+    nameWithType: TelemetryClient.trackException(ExceptionTelemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackException(ExceptionTelemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackException*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 299
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-144">Sendet eine ExceptionTelemetry-Datensatzes für die Anzeige in Diagnostic suchen.</span><span class="sxs-lookup"><span data-stu-id="b628c-144">Sends an ExceptionTelemetry record for display in Diagnostic Search.</span></span> </p>
+    syntax:
+      content: public void trackException(ExceptionTelemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._exception_telemetry
+          description: <p><span data-ttu-id="b628c-145">Ein bereits erstelltes Ausnahme werden Eintrag.</span><span class="sxs-lookup"><span data-stu-id="b628c-145">An already constructed exception telemetry record.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackHttpRequest(String,Date,long,String,boolean)'
+    id: 'trackHttpRequest(String,Date,long,String,boolean)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackHttpRequest(String name, Date timestamp, long duration, String responseCode, boolean success)'
+    nameWithType: 'TelemetryClient.trackHttpRequest(String name, Date timestamp, long duration, String responseCode, boolean success)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackHttpRequest(String name, Date timestamp, long duration, String responseCode, boolean success)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackHttpRequest*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 312
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-146">Sendet einen Anforderung Datensatz zu Anwendung Einsichten an.</span><span class="sxs-lookup"><span data-stu-id="b628c-146">Sends a request record to Application Insights.</span></span> <span data-ttu-id="b628c-147">"Anfragen" Suchen und Analytics eingeblendet, und in metrischen Diagramme, wie z. B. Serveranfragen, Server Reaktionszeiten, fehlerhaften Anforderungen beiträgt.</span><span class="sxs-lookup"><span data-stu-id="b628c-147">Appears in "requests" in Search and Analytics, and contributes to metric charts such as Server Requests, Server Response Time, Failed Requests.</span></span> </p>'
+    syntax:
+      content: 'public void trackHttpRequest(String name, Date timestamp, long duration, String responseCode, boolean success)'
+      parameters:
+        - id: name
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-148">Einen benutzerfreundlichen Namen für die Anforderung oder den Vorgang.</span><span class="sxs-lookup"><span data-stu-id="b628c-148">A user-friendly name for the request or operation.</span></span> </p>
+        - id: timestamp
+          type: '12977444'
+          description: <p><span data-ttu-id="b628c-149">Die Uhrzeit der Anfrage.</span><span class="sxs-lookup"><span data-stu-id="b628c-149">The time of the request.</span></span> </p>
+        - id: duration
+          type: 0364520f
+          description: '<p><span data-ttu-id="b628c-150">Die Dauer in Millisekunden, für die Verarbeitung von Besprechungsanfragen.</span><span class="sxs-lookup"><span data-stu-id="b628c-150">The duration, in milliseconds, of the request processing.</span></span> </p>'
+        - id: responseCode
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-151">Die HTTP-Antwort-Code.</span><span class="sxs-lookup"><span data-stu-id="b628c-151">The HTTP response code.</span></span> </p>
+        - id: success
+          type: 4fc6e284
+          description: '<p><span data-ttu-id="b628c-152">wahr falsch als fehlgeschlagene Anforderung des Vorgangs als eine erfolgreiche Anforderung, aufzeichnen.</span><span class="sxs-lookup"><span data-stu-id="b628c-152">true to record the operation as a successful request, false as a failed request.</span></span> </p>'
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackMetric(MetricTelemetry)
+    id: trackMetric(MetricTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackMetric(MetricTelemetry telemetry)
+    nameWithType: TelemetryClient.trackMetric(MetricTelemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackMetric(MetricTelemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackMetric*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 259
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-153">Sendet eine numerische Metrik zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-153">Sends a numeric metric to Application Insights.</span></span> <span data-ttu-id="b628c-154">CustomMetrics in Analytics, und klicken Sie unter Benutzerdefiniert Kennzahlen Metrisch Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-154">Appears in customMetrics in Analytics, and under Custom Metrics in Metric Explorer.</span></span> </p>'
+    syntax:
+      content: public void trackMetric(MetricTelemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._metric_telemetry
+          description: <p><span data-ttu-id="b628c-155">Die <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.Telemetry</xref> -Instanz aus.</span><span class="sxs-lookup"><span data-stu-id="b628c-155">The <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.Telemetry</xref> instance.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackMetric(String,double)'
+    id: 'trackMetric(String,double)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackMetric(String name, double value)'
+    nameWithType: 'TelemetryClient.trackMetric(String name, double value)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackMetric(String name, double value)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackMetric*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 251
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-156">Sendet eine numerische Metrik zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-156">Sends a numeric metric to Application Insights.</span></span> <span data-ttu-id="b628c-157">CustomMetrics in Analytics, und klicken Sie unter Benutzerdefiniert Kennzahlen Metrisch Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-157">Appears in customMetrics in Analytics, and under Custom Metrics in Metric Explorer.</span></span> </p>'
+    syntax:
+      content: 'public void trackMetric(String name, double value)'
+      parameters:
+        - id: name
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-158">Der Name der Metrik.</span><span class="sxs-lookup"><span data-stu-id="b628c-158">The name of the metric.</span></span> <span data-ttu-id="b628c-159">Die Maximallänge 150.</span><span class="sxs-lookup"><span data-stu-id="b628c-159">Max length 150.</span></span> </p>
+        - id: value
+          type: a07dcde8
+          description: <p><span data-ttu-id="b628c-160">Der Wert der Metrik.</span><span class="sxs-lookup"><span data-stu-id="b628c-160">The value of the metric.</span></span> <span data-ttu-id="b628c-161">Sollte größer gleich 0 sein.</span><span class="sxs-lookup"><span data-stu-id="b628c-161">Should be greater than 0.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackMetric(String,double,int,double,double,Map<String, String>)'
+    id: 'trackMetric(String,double,int,double,double,Map<String, String>)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackMetric(String name, double value, int sampleCount, double min, double max, Map<String, String> properties)'
+    nameWithType: 'TelemetryClient.trackMetric(String name, double value, int sampleCount, double min, double max, Map<String, String> properties)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackMetric(String name, double value, int sampleCount, double min, double max, Map<String, String> properties)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackMetric*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 223
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-162">Sendet eine numerische Metrik zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-162">Sends a numeric metric to Application Insights.</span></span> <span data-ttu-id="b628c-163">CustomMetrics in Analytics, und klicken Sie unter Benutzerdefiniert Kennzahlen Metrisch Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-163">Appears in customMetrics in Analytics, and under Custom Metrics in Metric Explorer.</span></span> </p>'
+    syntax:
+      content: 'public void trackMetric(String name, double value, int sampleCount, double min, double max, Map<String, String> properties)'
+      parameters:
+        - id: name
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-164">Der Name der Metrik.</span><span class="sxs-lookup"><span data-stu-id="b628c-164">The name of the metric.</span></span> <span data-ttu-id="b628c-165">Die Maximallänge 150.</span><span class="sxs-lookup"><span data-stu-id="b628c-165">Max length 150.</span></span> </p>
+        - id: value
+          type: a07dcde8
+          description: <p><span data-ttu-id="b628c-166">Der Wert der Metrik.</span><span class="sxs-lookup"><span data-stu-id="b628c-166">The value of the metric.</span></span> <span data-ttu-id="b628c-167">Bilden des Mittelwerts Wenn basierend auf mehr als eine Stichprobe zählen.</span><span class="sxs-lookup"><span data-stu-id="b628c-167">Average if based on more than one sample count.</span></span> <span data-ttu-id="b628c-168">Sollte größer gleich 0 sein.</span><span class="sxs-lookup"><span data-stu-id="b628c-168">Should be greater than 0.</span></span> </p>
+        - id: sampleCount
+          type: f75371fa
+          description: <p><span data-ttu-id="b628c-169">Die Anzahl der Stichprobe.</span><span class="sxs-lookup"><span data-stu-id="b628c-169">The sample count.</span></span> </p>
+        - id: min
+          type: a07dcde8
+          description: <p><span data-ttu-id="b628c-170">Den kleinsten Wert der Stichprobe.</span><span class="sxs-lookup"><span data-stu-id="b628c-170">The minimum value of the sample.</span></span> </p>
+        - id: max
+          type: a07dcde8
+          description: <p><span data-ttu-id="b628c-171">Der maximale Wert der Stichprobe.</span><span class="sxs-lookup"><span data-stu-id="b628c-171">The maximum value of the sample.</span></span> </p>
+        - id: properties
+          type: 689c8cb5
+          description: '<p><span data-ttu-id="b628c-172">Mit dem Namen Zeichenfolgenwerte, die Sie verwenden können, zu durchsuchen und Spur Nachrichten klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="b628c-172">Named string values you can use to search and classify trace messages.</span></span> </p>'
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackPageView(PageViewTelemetry)
+    id: trackPageView(PageViewTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackPageView(PageViewTelemetry telemetry)
+    nameWithType: TelemetryClient.trackPageView(PageViewTelemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackPageView(PageViewTelemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackPageView*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 378
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-173">Senden von Informationen über die Seite in der Anwendung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-173">Send information about the page viewed in the application.</span></span> </p>
+    syntax:
+      content: public void trackPageView(PageViewTelemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._page_view_telemetry
+          description: <p><span data-ttu-id="b628c-174">Die telemetrieprotokoll senden</span><span class="sxs-lookup"><span data-stu-id="b628c-174">The telemetry to send</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackPageView(String)
+    id: trackPageView(String)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackPageView(String name)
+    nameWithType: TelemetryClient.trackPageView(String name)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackPageView(String name)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackPageView*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 360
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-175">Sendet einen Seite Ansichtsdatensatz zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-175">Sends a page view record to Application Insights.</span></span> <span data-ttu-id="b628c-176">"Seitenansichten" Suchen und Analytics eingeblendet, und in metrischen Diagramme, wie z. B. Seite Ansicht Laden Zeit beiträgt.</span><span class="sxs-lookup"><span data-stu-id="b628c-176">Appears in "page views" in Search and Analytics, and contributes to metric charts such as Page View Load Time.</span></span> </p>'
+    syntax:
+      content: public void trackPageView(String name)
+      parameters:
+        - id: name
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-177">Der Name der Seite.</span><span class="sxs-lookup"><span data-stu-id="b628c-177">The name of the page.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackRequest(RequestTelemetry)
+    id: trackRequest(RequestTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackRequest(RequestTelemetry request)
+    nameWithType: TelemetryClient.trackRequest(RequestTelemetry request)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackRequest(RequestTelemetry request)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackRequest*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 327
+    package: com.microsoft.applicationinsights
+    summary: |-
+      <p><span data-ttu-id="b628c-178">Sendet einen Anforderung Datensatz zu Anwendung Einsichten an.</span><span class="sxs-lookup"><span data-stu-id="b628c-178">Sends a request record to Application Insights.</span></span> <span data-ttu-id="b628c-179">"Anfragen" Suchen und Analytics eingeblendet, und in metrischen Diagramme, wie z. B. Serveranfragen, Server Reaktionszeiten, fehlerhaften Anforderungen beiträgt.</span><span class="sxs-lookup"><span data-stu-id="b628c-179">Appears in "requests" in Search and Analytics, and contributes to metric charts such as Server Requests, Server Response Time, Failed Requests.</span></span></p>
+      <p></p>
+    syntax:
+      content: public void trackRequest(RequestTelemetry request)
+      parameters:
+        - id: request
+          type: com.microsoft.applicationinsights.telemetry._request_telemetry
+          description: <p><span data-ttu-id="b628c-180">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b628c-180">request</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackSessionState(SessionState)
+    id: trackSessionState(SessionState)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackSessionState(SessionState sessionState)
+    nameWithType: TelemetryClient.trackSessionState(SessionState sessionState)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackSessionState(SessionState sessionState)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackSessionState*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 117
+    package: com.microsoft.applicationinsights
+    summary: '<p><span data-ttu-id="b628c-181">Sendet den angegebenen Status einer Sitzung Benutzer zu Anwendung Einsichten <xref uid="com.microsoft.applicationinsights._telemetry_client.trackEvent(String)" data-throw-if-not-resolved="false">TrackEvent(String name)</xref> verwenden, wie diese Methode nicht mehr unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b628c-181">Sends the specified state of a user session to Application Insights using <xref uid="com.microsoft.applicationinsights._telemetry_client.trackEvent(String)" data-throw-if-not-resolved="false">trackEvent(String name)</xref> as this method will be deprecated.</span></span> <xrefsect id="deprecated_1_deprecated000042"><xreftitle><span data-ttu-id="b628c-182">Nicht mehr unterstützt</span><span class="sxs-lookup"><span data-stu-id="b628c-182">Deprecated</span></span></xreftitle><xrefdescription><p><span data-ttu-id="b628c-183">Diese Methode wird in der Java SDK Version 2.0.0 nicht mehr unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b628c-183">This method will be deprecated in version 2.0.0 of the Java SDK.</span></span> </p></xrefdescription></xrefsect></p>'
+    syntax:
+      content: public void trackSessionState(SessionState sessionState)
+      parameters:
+        - id: sessionState
+          type: com.microsoft.applicationinsights.telemetry._session_state
+          description: |-
+            <p><span data-ttu-id="b628c-184">
+
+              <xref uid="com.microsoft.applicationinsights.telemetry._session_state" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.SessionState</xref> -Wert, der angibt, des Status einer Sitzung Benutzer.</span><span class="sxs-lookup"><span data-stu-id="b628c-184">
+
+              <xref uid="com.microsoft.applicationinsights.telemetry._session_state" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.SessionState</xref> value indicating the state of a user session.</span></span> </p>
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackTrace(String)
+    id: trackTrace(String)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackTrace(String message)
+    nameWithType: TelemetryClient.trackTrace(String message)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackTrace(String message)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackTrace*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 193
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-185">Sendet einen Eintrag TraceTelemetry zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-185">Sends a TraceTelemetry record to Application Insights.</span></span> <span data-ttu-id="b628c-186">Wird in "auf" Analytics und eine Suche angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-186">Appears in "traces" in Analytics and Search.</span></span> </p>
+    syntax:
+      content: public void trackTrace(String message)
+      parameters:
+        - id: message
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-187">Eine Nachricht.</span><span class="sxs-lookup"><span data-stu-id="b628c-187">A log message.</span></span> <span data-ttu-id="b628c-188">Die Maximallänge 10000.</span><span class="sxs-lookup"><span data-stu-id="b628c-188">Max length 10000.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackTrace(String,SeverityLevel)'
+    id: 'trackTrace(String,SeverityLevel)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackTrace(String message, SeverityLevel severityLevel)'
+    nameWithType: 'TelemetryClient.trackTrace(String message, SeverityLevel severityLevel)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackTrace(String message, SeverityLevel severityLevel)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackTrace*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 202
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-189">Sendet einen Eintrag TraceTelemetry.</span><span class="sxs-lookup"><span data-stu-id="b628c-189">Sends a TraceTelemetry record.</span></span> <span data-ttu-id="b628c-190">Wird in "auf" Analytics und eine Suche angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-190">Appears in "traces" in Analytics and Search.</span></span> </p>
+    syntax:
+      content: 'public void trackTrace(String message, SeverityLevel severityLevel)'
+      parameters:
+        - id: message
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-191">Eine Nachricht.</span><span class="sxs-lookup"><span data-stu-id="b628c-191">A log message.</span></span> <span data-ttu-id="b628c-192">Die Maximallänge 10000.</span><span class="sxs-lookup"><span data-stu-id="b628c-192">Max length 10000.</span></span> </p>
+        - id: severityLevel
+          type: com.microsoft.applicationinsights.telemetry._severity_level
+          description: <p><span data-ttu-id="b628c-193">Die schwere Ebene.</span><span class="sxs-lookup"><span data-stu-id="b628c-193">The severity level.</span></span> </p>
+  - uid: 'com.microsoft.applicationinsights._telemetry_client.trackTrace(String,SeverityLevel,Map<String, String>)'
+    id: 'trackTrace(String,SeverityLevel,Map<String, String>)'
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: 'trackTrace(String message, SeverityLevel severityLevel, Map<String, String> properties)'
+    nameWithType: 'TelemetryClient.trackTrace(String message, SeverityLevel severityLevel, Map<String, String> properties)'
+    fullName: 'void com.microsoft.applicationinsights.TelemetryClient.trackTrace(String message, SeverityLevel severityLevel, Map<String, String> properties)'
+    overload: com.microsoft.applicationinsights._telemetry_client.trackTrace*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 171
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-194">Sendet einen Eintrag TraceTelemetry zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-194">Sends a TraceTelemetry record to Application Insights.</span></span> <span data-ttu-id="b628c-195">Wird in "auf" Analytics und eine Suche angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-195">Appears in "traces" in Analytics and Search.</span></span> </p>
+    syntax:
+      content: 'public void trackTrace(String message, SeverityLevel severityLevel, Map<String, String> properties)'
+      parameters:
+        - id: message
+          type: '26831127'
+          description: <p><span data-ttu-id="b628c-196">Eine Nachricht.</span><span class="sxs-lookup"><span data-stu-id="b628c-196">A log message.</span></span> <span data-ttu-id="b628c-197">Die Maximallänge 10000.</span><span class="sxs-lookup"><span data-stu-id="b628c-197">Max length 10000.</span></span> </p>
+        - id: severityLevel
+          type: com.microsoft.applicationinsights.telemetry._severity_level
+          description: <p><span data-ttu-id="b628c-198">Die schwere Ebene.</span><span class="sxs-lookup"><span data-stu-id="b628c-198">The severity level.</span></span> </p>
+        - id: properties
+          type: 689c8cb5
+          description: '<p><span data-ttu-id="b628c-199">Mit dem Namen Zeichenfolgenwerte, die Sie verwenden können, zu durchsuchen und Spur Nachrichten klassifizieren.</span><span class="sxs-lookup"><span data-stu-id="b628c-199">Named string values you can use to search and classify trace messages.</span></span> </p>'
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackTrace(TraceTelemetry)
+    id: trackTrace(TraceTelemetry)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    langs:
+      - java
+    name: trackTrace(TraceTelemetry telemetry)
+    nameWithType: TelemetryClient.trackTrace(TraceTelemetry telemetry)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackTrace(TraceTelemetry telemetry)
+    overload: com.microsoft.applicationinsights._telemetry_client.trackTrace*
+    type: Method
+    source:
+      remote: *ref_0
+      path: core/src/main/java/com/microsoft/applicationinsights/TelemetryClient.java
+      startLine: 210
+    package: com.microsoft.applicationinsights
+    summary: <p><span data-ttu-id="b628c-200">Sendet einen TraceTelemetry-Eintrag für die Anzeige in Diagnostic suchen.</span><span class="sxs-lookup"><span data-stu-id="b628c-200">Sends a TraceTelemetry record for display in Diagnostic Search.</span></span> </p>
+    syntax:
+      content: public void trackTrace(TraceTelemetry telemetry)
+      parameters:
+        - id: telemetry
+          type: com.microsoft.applicationinsights.telemetry._trace_telemetry
+          description: <p><span data-ttu-id="b628c-201">Die <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.Telemetry</xref> -Instanz aus.</span><span class="sxs-lookup"><span data-stu-id="b628c-201">The <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.Telemetry</xref> instance.</span></span> </p>
+references:
+  - uid: com.microsoft.applicationinsights._telemetry_client.TelemetryClient*
+    name: TelemetryClient
+    nameWithType: TelemetryClient.TelemetryClient
+    fullName: com.microsoft.applicationinsights.TelemetryClient.TelemetryClient
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.getContext*
+    name: getContext
+    nameWithType: TelemetryClient.getContext
+    fullName: TelemetryContext com.microsoft.applicationinsights.TelemetryClient.getContext
+    package: com.microsoft.applicationinsights
+  - uid: 4fc6e284
+    spec.java:
+      - name: boolean
+        fullName: boolean
+  - uid: com.microsoft.applicationinsights._telemetry_client.isDisabled*
+    name: isDisabled
+    nameWithType: TelemetryClient.isDisabled
+    fullName: boolean com.microsoft.applicationinsights.TelemetryClient.isDisabled
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackSessionState*
+    name: trackSessionState
+    nameWithType: TelemetryClient.trackSessionState
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackSessionState
+    package: com.microsoft.applicationinsights
+  - uid: '26831127'
+    spec.java:
+      - name: String
+        fullName: String
+  - uid: 689c8cb5
+    spec.java:
+      - name: 'Map<String, String>'
+        fullName: 'Map<String, String>'
+  - uid: 2ed405bc
+    spec.java:
+      - name: 'Map<String, Double>'
+        fullName: 'Map<String, Double>'
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackEvent*
+    name: trackEvent
+    nameWithType: TelemetryClient.trackEvent
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackEvent
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackTrace*
+    name: trackTrace
+    nameWithType: TelemetryClient.trackTrace
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackTrace
+    package: com.microsoft.applicationinsights
+  - uid: a07dcde8
+    spec.java:
+      - name: double
+        fullName: double
+  - uid: f75371fa
+    spec.java:
+      - name: int
+        fullName: int
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackMetric*
+    name: trackMetric
+    nameWithType: TelemetryClient.trackMetric
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackMetric
+    package: com.microsoft.applicationinsights
+  - uid: 8a99d4b0
+    spec.java:
+      - name: Exception
+        fullName: Exception
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackException*
+    name: trackException
+    nameWithType: TelemetryClient.trackException
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackException
+    package: com.microsoft.applicationinsights
+  - uid: '12977444'
+    spec.java:
+      - name: Date
+        fullName: Date
+  - uid: 0364520f
+    spec.java:
+      - name: long
+        fullName: long
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackHttpRequest*
+    name: trackHttpRequest
+    nameWithType: TelemetryClient.trackHttpRequest
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackHttpRequest
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackRequest*
+    name: trackRequest
+    nameWithType: TelemetryClient.trackRequest
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackRequest
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackDependency*
+    name: trackDependency
+    nameWithType: TelemetryClient.trackDependency
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackDependency
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackPageView*
+    name: trackPageView
+    nameWithType: TelemetryClient.trackPageView
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackPageView
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.track*
+    name: track
+    nameWithType: TelemetryClient.track
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.track
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_client.flush*
+    name: flush
+    nameWithType: TelemetryClient.flush
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.flush
+    package: com.microsoft.applicationinsights
+  - uid: com.microsoft.applicationinsights._telemetry_configuration
+    parent: com.microsoft.applicationinsights
+    href: com.microsoft.applicationinsights._telemetry_configuration.yml
+    name: TelemetryConfiguration
+    nameWithType: TelemetryConfiguration
+    fullName: com.microsoft.applicationinsights.TelemetryConfiguration
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-202">Kapselt die globale werden-Konfiguration, die in der Regel aus der ApplicationInsights.xml Datei geladen.</span><span class="sxs-lookup"><span data-stu-id="b628c-202">Encapsulates the global telemetry configuration typically loaded from the ApplicationInsights.xml file.</span></span></p>
+      <p><span data-ttu-id="b628c-203">Alle <xref uid="com.microsoft.applicationinsights.telemetry._telemetry_context" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.TelemetryContext</xref> Objekte sind Initialisierung mit der 'aktiv' (zurückgegeben durch die 'GetActive' statische Methode) werden Konfiguration von dieser Klasse bereitgestellten.</span><span class="sxs-lookup"><span data-stu-id="b628c-203">All <xref uid="com.microsoft.applicationinsights.telemetry._telemetry_context" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.telemetry.TelemetryContext</xref> objects are initialized using the 'Active' (returned by the 'getActive' static method) telemetry configuration provided by this class.</span></span> </p>
+    syntax:
+      content: public class TelemetryConfiguration
+  - uid: com.microsoft.applicationinsights.telemetry._telemetry_context
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._telemetry_context.yml
+    name: TelemetryContext
+    nameWithType: TelemetryContext
+    fullName: com.microsoft.applicationinsights.telemetry.TelemetryContext
+    type: Class
+    summary: '<p><span data-ttu-id="b628c-204">Stellt einen Kontext für werden in der Anwendung Einsichten Service senden.</span><span class="sxs-lookup"><span data-stu-id="b628c-204">Represents a context for sending telemetry to the Application Insights service.</span></span> <span data-ttu-id="b628c-205">Im Kontext enthält Daten, die für jedes Element werden gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="b628c-205">The context holds data that is sent with every telemetry item.</span></span> <span data-ttu-id="b628c-206">Er enthält die Taste Instrumentation; die aktuelle Vorgang-Id für das Abgleichen Zusammenhang Elemente werden; Datums- und Benutzer, die Sitzung und Gerät.</span><span class="sxs-lookup"><span data-stu-id="b628c-206">It includes the instrumentation key; the current operation id, for correlating related telemetry items; and user, session and device data.</span></span> <span data-ttu-id="b628c-207">Sie können auch die Eigenschaften, die für jedes Element werden hinzugefügt werden, und können verwendet werden, festlegen, im Portal die telemetrieprotokoll filtern, die dieser Kontext verwendet.</span><span class="sxs-lookup"><span data-stu-id="b628c-207">You can also set properties that are added to every telemetry item, and can be used in the portal to filter the telemetry that used this context.</span></span> </p>'
+    syntax:
+      content: public class TelemetryContext
+  - uid: com.microsoft.applicationinsights.channel._telemetry_channel
+    parent: com.microsoft.applicationinsights.channel
+    href: com.microsoft.applicationinsights.channel._telemetry_channel.yml
+    name: TelemetryChannel
+    nameWithType: TelemetryChannel
+    fullName: com.microsoft.applicationinsights.channel.TelemetryChannel
+    type: Interface
+    summary: <p><span data-ttu-id="b628c-208">Stellt einen Kommunikation Channel zum Senden von werden an die Anwendung Einsichten Azure dar.</span><span class="sxs-lookup"><span data-stu-id="b628c-208">Represents a communication channel for sending telemetry to Azure Application Insights.</span></span> </p>
+    syntax:
+      content: public interface TelemetryChannel
+  - uid: com.microsoft.applicationinsights._telemetry_client
+    parent: com.microsoft.applicationinsights
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    name: TelemetryClient
+    nameWithType: TelemetryClient
+    fullName: com.microsoft.applicationinsights.TelemetryClient
+    type: Class
+    summary: '<p><span data-ttu-id="b628c-209">Erstellen Sie eine Instanz dieser Klasse werden an Azure Anwendung Einsichten zu senden.</span><span class="sxs-lookup"><span data-stu-id="b628c-209">Create an instance of this class to send telemetry to Azure Application Insights.</span></span> <span data-ttu-id="b628c-210">Allgemeine Übersicht<ulink url="https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics">https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics</ulink></span><span class="sxs-lookup"><span data-stu-id="b628c-210">General overview <ulink url="https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics">https://docs.microsoft.com/azure/application-insights/app-insights-api-custom-events-metrics</ulink></span></span></p>'
+    syntax: *ref_1
+  - uid: com.microsoft.applicationinsights.telemetry._session_state
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._session_state.yml
+    name: SessionState
+    nameWithType: SessionState
+    fullName: com.microsoft.applicationinsights.telemetry.SessionState
+    type: Enum
+    summary: <p><span data-ttu-id="b628c-211">Sitzung Staaten.</span><span class="sxs-lookup"><span data-stu-id="b628c-211">Session states.</span></span> </p>
+    syntax:
+      content: public enum SessionState
+  - uid: com.microsoft.applicationinsights._telemetry_client.trackEvent(String)
+    parent: com.microsoft.applicationinsights._telemetry_client
+    href: com.microsoft.applicationinsights._telemetry_client.yml
+    name: trackEvent(String name)
+    nameWithType: TelemetryClient.trackEvent(String name)
+    fullName: void com.microsoft.applicationinsights.TelemetryClient.trackEvent(String name)
+    type: Method
+    summary: '<p><span data-ttu-id="b628c-212">Sendet einen Eintrag benutzerdefiniertes Ereignis zu Einsichten Anwendung.</span><span class="sxs-lookup"><span data-stu-id="b628c-212">Sends a custom event record to Application Insights.</span></span> <span data-ttu-id="b628c-213">"Benutzerdefinierte Ereignisse" in Analytics, Suche und Kennzahlen Explorer wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b628c-213">Appears in "custom events" in Analytics, Search and Metrics Explorer.</span></span> </p>'
+    syntax: *ref_2
+  - uid: com.microsoft.applicationinsights.telemetry._event_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._event_telemetry.yml
+    name: EventTelemetry
+    nameWithType: EventTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.EventTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-214">Geben Sie 
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">werden</xref> verwendet, um benutzerdefinierte Ereignisse in Azure Anwendung Einsichten nachzuverfolgen.</span><span class="sxs-lookup"><span data-stu-id="b628c-214">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Telemetry</xref> type used to track custom events in Azure Application Insights.</span></span> </p>
+    syntax:
+      content: public class EventTelemetry extends BaseSampleSourceTelemetry<EventData>
+  - uid: com.microsoft.applicationinsights.telemetry._severity_level
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._severity_level.yml
+    name: SeverityLevel
+    nameWithType: SeverityLevel
+    fullName: com.microsoft.applicationinsights.telemetry.SeverityLevel
+    type: Enum
+    summary: <p><span data-ttu-id="b628c-215">Enumeration <xref uid="com.microsoft.applicationinsights.telemetry._severity_level" data-throw-if-not-resolved="false">SeverityLevel</xref>.</span><span class="sxs-lookup"><span data-stu-id="b628c-215">Enum <xref uid="com.microsoft.applicationinsights.telemetry._severity_level" data-throw-if-not-resolved="false">SeverityLevel</xref>.</span></span> </p>
+    syntax:
+      content: public enum SeverityLevel
+  - uid: com.microsoft.applicationinsights.telemetry._trace_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._trace_telemetry.yml
+    name: TraceTelemetry
+    nameWithType: TraceTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.TraceTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-216">Geben Sie 
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">telemetrieprotokoll</xref> für Protokollnachrichten verwendet.</span><span class="sxs-lookup"><span data-stu-id="b628c-216">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Telemetry</xref> type used for log messages.</span></span> </p>
+    syntax:
+      content: public class TraceTelemetry
+  - uid: com.microsoft.applicationinsights.telemetry._telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._telemetry.yml
+    name: Telemetry
+    nameWithType: Telemetry
+    fullName: com.microsoft.applicationinsights.telemetry.Telemetry
+    type: Interface
+    summary: <p><span data-ttu-id="b628c-217">Die Basis werden Typ Benutzeroberfläche für die Anwendung Einsichten.</span><span class="sxs-lookup"><span data-stu-id="b628c-217">The base telemetry type interface for application insights.</span></span> </p>
+    syntax:
+      content: public interface Telemetry extends JsonSerializable
+  - uid: com.microsoft.applicationinsights.telemetry._metric_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._metric_telemetry.yml
+    name: MetricTelemetry
+    nameWithType: MetricTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.MetricTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-218">Geben Sie 
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">werden</xref> verwendet, um Kennzahlen gesendet, um die Anwendung Einsichten Azure nachzuverfolgen.</span><span class="sxs-lookup"><span data-stu-id="b628c-218">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Telemetry</xref> type used to track metrics sent to Azure Application Insights.</span></span> </p>
+    syntax:
+      content: public class MetricTelemetry extends BaseTelemetry<MetricData>
+  - uid: com.microsoft.applicationinsights.telemetry._exception_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._exception_telemetry.yml
+    name: ExceptionTelemetry
+    nameWithType: ExceptionTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.ExceptionTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-219">Geben Sie 
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">werden</xref> verwendet, um gesendet, um die Anwendung Einsichten Azure Ausnahmen nachzuverfolgen.</span><span class="sxs-lookup"><span data-stu-id="b628c-219">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Telemetry</xref> type used to track exceptions sent to Azure Application Insights.</span></span> </p>
+    syntax:
+      content: public class ExceptionTelemetry extends BaseSampleSourceTelemetry<ExceptionData>
+  - uid: com.microsoft.applicationinsights.telemetry._request_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._request_telemetry.yml
+    name: RequestTelemetry
+    nameWithType: RequestTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.RequestTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-220">Kapselt Informationen zu einer Web-Anforderung, die von der Anwendung behandelt.</span><span class="sxs-lookup"><span data-stu-id="b628c-220">Encapsulates information about a web request handled by the application.</span></span></p>
+      <p><span data-ttu-id="b628c-221">Sie können Informationen zu Anfragen verarbeiteten Ihrer Webanwendung zu Anwendung Einsichten eine Instanz dieser Klasse an die Methode 'TrackRequest' für die <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.TelemetryClient</xref> übergeben senden.</span><span class="sxs-lookup"><span data-stu-id="b628c-221">You can send information about requests processed by your web application to Application Insights by passing an instance of this class to the 'trackRequest' method of the <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.TelemetryClient</xref></span></span></p>
+    syntax:
+      content: public class RequestTelemetry extends BaseSampleSourceTelemetry<RequestData>
+  - uid: com.microsoft.applicationinsights.telemetry._duration
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._duration.yml
+    name: Duration
+    nameWithType: Duration
+    fullName: com.microsoft.applicationinsights.telemetry.Duration
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-222">Diese Klasse kann ihren Benutzern, um ein Zeitintervall zu definieren, die mithilfe von Tagen, Stunden, Minuten, Sekunden und Millisekunden definiert werden können.</span><span class="sxs-lookup"><span data-stu-id="b628c-222">This class lets its users to define an interval of time which can be defined in terms of days, hours, minutes, seconds and milliseconds.</span></span></p>
+      <p><span data-ttu-id="b628c-223">Sie verfügt über verschiedene Konstruktoren ermöglichen den Benutzer einfach ein Zeitintervall definieren.</span><span class="sxs-lookup"><span data-stu-id="b628c-223">It has various constructors to let the user easily define an interval of time.</span></span> </p>
+    syntax:
+      content: public class Duration
+  - uid: com.microsoft.applicationinsights.telemetry._remote_dependency_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._remote_dependency_telemetry.yml
+    name: RemoteDependencyTelemetry
+    nameWithType: RemoteDependencyTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.RemoteDependencyTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-224">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Werden</xref> gesendet, um Azure Anwendung Einsichten zu Abhängigkeiten - d. h., Anrufe von Ihrer Anwendung mit externen Diensten wie Datenbanken oder REST-APIs.</span><span class="sxs-lookup"><span data-stu-id="b628c-224">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Telemetry</xref> sent to Azure Application Insights about dependencies - that is, calls from your application to external services such as databases or REST APIs.</span></span> </p>
+    syntax:
+      content: public class RemoteDependencyTelemetry extends BaseSampleSourceTelemetry<RemoteDependencyData>
+  - uid: com.microsoft.applicationinsights.telemetry._page_view_telemetry
+    parent: com.microsoft.applicationinsights.telemetry
+    href: com.microsoft.applicationinsights.telemetry._page_view_telemetry.yml
+    name: PageViewTelemetry
+    nameWithType: PageViewTelemetry
+    fullName: com.microsoft.applicationinsights.telemetry.PageViewTelemetry
+    type: Class
+    summary: |-
+      <p><span data-ttu-id="b628c-225">Geben Sie 
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">werden</xref> verwendet, um die Seitenansichten nachverfolgen.</span><span class="sxs-lookup"><span data-stu-id="b628c-225">
+
+        <xref uid="com.microsoft.applicationinsights.telemetry._telemetry" data-throw-if-not-resolved="false">Telemetry</xref> type used to track page views.</span></span></p>
+
+      <p><span data-ttu-id="b628c-226">Sie können Informationen zu Seiten, die von der Anwendung zu Anwendung Einsichten angezeigt wird, eine Instanz dieser Klasse an die Methode 'TrackPageView' für die <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.TelemetryClient</xref> übergeben senden.</span><span class="sxs-lookup"><span data-stu-id="b628c-226">You can send information about pages viewed by your application to Application Insights by passing an instance of this class to the 'trackPageView' method of the <xref uid="com.microsoft.applicationinsights._telemetry_client" data-throw-if-not-resolved="false">com.microsoft.applicationinsights.TelemetryClient</xref></span></span></p>
+    syntax:
+      content: public class PageViewTelemetry extends BaseSampleSourceTelemetry<PageViewData>
